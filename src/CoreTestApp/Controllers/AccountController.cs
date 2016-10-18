@@ -459,7 +459,7 @@ namespace CoreTestApp.Controllers
             }
             else
             {
-                return RedirectToAction(nameof(HomeController.Register2), "Home");
+                return RedirectToAction(nameof(HomeController.Register2), "Home"); //
             }
         }
 
