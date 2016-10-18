@@ -27,6 +27,13 @@ namespace CoreTestApp.Controllers
             return View();
         }
 
+        public IActionResult Register2() //
+        {
+            ViewData["Message"] = "Your full register page.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
