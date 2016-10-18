@@ -17,7 +17,8 @@
     </environment>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+   
+    <div class="navbar navbar-inverse ">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -31,21 +32,38 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Information">Information</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Events">Events</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2016 - CoreTestApp</p>
-        </footer>
-    </div>
+    <div class="container">
+        <div class="jumbotron" style="padding:0em;background-color:#309B4B;">
+            <img src="~/images/logo.png" />
+            <span style="font-size:64px;color:white; padding-left:1em;">Sligo Athletic Club</span>
+        </div>
 
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer style="background-color:#309B4B;color:white;">
+                <ul>
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                    <li><a href="">Link 5</a></li>
+                    <li><a href="">Link 6</a></li>
+                    <li><a href="">Link 7</a></li>
+                </ul>
+                <p class="bottom-left">&copy; 2016 Sligo Athletic Club</p>
+            </footer>
+        </div>
+    </div>
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
