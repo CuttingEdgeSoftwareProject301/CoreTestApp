@@ -34,6 +34,22 @@ namespace CoreTestApp.Controllers
             return View();
         }
 
+
+        public IActionResult Events() //
+        {
+            ViewData["Message"] = "Your events page";
+
+            return View();
+        }
+
+
+        public IActionResult Information() //
+        {
+            ViewData["Message"] = "Your Info page";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

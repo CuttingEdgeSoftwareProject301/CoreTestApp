@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-CoreTestApp-c5d627da-a263-4827-bee5-14dda4e7ca10",
 
   "dependencies": {
@@ -43,7 +43,8 @@
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "bootstrap": "3.3.7"
   },
 
   "tools": {
