@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace CoreTestApp
 {
+    //PAUL ADDED THIS AS FOR TEST PURPOSES
     public class Program
     {
         public static void Main(string[] args)
