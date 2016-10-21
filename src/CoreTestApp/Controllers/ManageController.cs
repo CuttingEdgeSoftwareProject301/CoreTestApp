@@ -12,6 +12,7 @@ using CoreTestApp.Services;
 
 namespace CoreTestApp.Controllers
 {
+    [RequireHttps]
     [Authorize]
     public class ManageController : Controller
     {

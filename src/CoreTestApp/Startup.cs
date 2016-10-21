@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using CoreTestApp.Data;
 using CoreTestApp.Models;
 using CoreTestApp.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CoreTestApp
 {
@@ -52,10 +53,16 @@ namespace CoreTestApp
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.Configure<AuthMessageSenderOptions>(Configuration);
 
             services.Configure<IdentityOptions>(o =>
             {
                 o.Password.RequireNonAlphanumeric = false;
+            });
+
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new RequireHttpsAttribute());
             });
         }
 

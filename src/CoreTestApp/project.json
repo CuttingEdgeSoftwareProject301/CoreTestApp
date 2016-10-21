@@ -44,7 +44,8 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "bootstrap": "3.3.7"
+    "bootstrap": "3.3.7",
+    "SendGrid.NetCore": "1.0.0-rtm-00002"
   },
 
   "tools": {
@@ -61,6 +62,7 @@
     }
   },
 
+  
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
