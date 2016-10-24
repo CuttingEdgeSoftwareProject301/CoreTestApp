@@ -2,10 +2,7 @@
   "userSecretsId": "aspnet-CoreTestApp-c5d627da-a263-4827-bee5-14dda4e7ca10",
 
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.1",
-      "type": "platform"
-    },
+    "bootstrap": "3.3.7",
     "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
@@ -35,6 +32,10 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+    "Microsoft.NETCore.App": {
+      "version": "1.0.1",
+      "type": "platform"
+    },
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
     "Microsoft.VisualStudio.Web.CodeGeneration.Tools": {
       "version": "1.0.0-preview2-final",
@@ -44,7 +45,6 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "bootstrap": "3.3.7",
     "SendGrid.NetCore": "1.0.0-rtm-00002"
   },
 
