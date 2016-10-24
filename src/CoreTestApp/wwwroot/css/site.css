@@ -23,6 +23,11 @@ textarea {
     line-height: 1.4;
 }
 
+.footerFormat{
+    line-height:1.5em;
+    font-size:medium;
+    color:white;
+}
 /* buttons and links extension to use brackets: [ click me ] */
 .btn-bracketed::before {
     display:inline-block;
