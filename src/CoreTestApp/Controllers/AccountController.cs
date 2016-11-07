@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using CoreTestApp.Models;
 using CoreTestApp.Models.AccountViewModels;
 using CoreTestApp.Services;
+using CoreTestApp.Models.ClubModels;
 
 namespace CoreTestApp.Controllers
 {
@@ -107,6 +108,21 @@ namespace CoreTestApp.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var member = new Member
+                {
+                    FirstName = model.FirstName,
+                    Surname = model.Surname,
+                    Address1 = model.Address1,
+                    Address2 = model.Address2,
+                    County = model.County,
+                    CountyOfBirth = model.CountyOfBirth,
+                    DateOfBirth = model.DateOfBirth,
+                    Gender = model.Gender,
+                    Nationality = model.Nationality,
+                    PhoneNumber = model.PhoneNumber,
+                    PostCode = model.PostCode,
+                    TeamName = model.TeamName
+                };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

@@ -45,10 +45,17 @@
         </div>
     </div>
     <div class="form-group">
-        <label asp-for="Address" class="col-md-2 control-label"></label>
+        <label asp-for="Address1" class="col-md-2 control-label"></label>
         <div class="col-md-10">
-            <input asp-for="Address" class="form-control" />
-            <span asp-validation-for="Address" class="text-danger"></span>
+            <input asp-for="Address1" class="form-control" />
+            <span asp-validation-for="Address1" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address2" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Address2" class="form-control" />
+            <span asp-validation-for="Address1" class="text-danger"></span>
         </div>
     </div>
     <div class="form-group">
@@ -95,6 +102,56 @@
         </div>
     </div>
     <div class="form-group">
+        <label asp-for="CountyOfBirth" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select-- <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Antrim</a></li>
+                <li><a href="#">Armagh</a></li>
+                <li><a href="#">Carlow</a></li>
+                <li><a href="#">Cavan</a></li>
+                <li><a href="#">Clare</a></li>
+                <li><a href="#">Cork</a></li>
+                <li><a href="#">Derry</a></li>
+                <li><a href="#">Donegal</a></li>
+                <li><a href="#">Down</a></li>
+                <li><a href="#">Dublin</a></li>
+                <li><a href="#">Fermanagh</a></li>
+                <li><a href="#">Galway</a></li>
+                <li><a href="#">Kerry</a></li>
+                <li><a href="#">Kildare</a></li>
+                <li><a href="#">Kilkenny</a></li>
+                <li><a href="#">Laois</a></li>
+                <li><a href="#">Leitrim</a></li>
+                <li><a href="#">Limerick</a></li>
+                <li><a href="#">Longford</a></li>
+                <li><a href="#">Louth</a></li>
+                <li><a href="#">Mayo</a></li>
+                <li><a href="#">Meath</a></li>
+                <li><a href="#">Monaghan</a></li>
+                <li><a href="#">Offaly</a></li>
+                <li><a href="#">Roscommon</a></li>
+                <li><a href="#">Sligo</a></li>
+                <li><a href="#">Tipperary</a></li>
+                <li><a href="#">Tyrone</a></li>
+                <li><a href="#">Waterford</a></li>
+                <li><a href="#">Westmeath</a></li>
+                <li><a href="#"> Wexford</a></li>
+                <li><a href="#"> Wicklow</a></li>
+            </ul>
+            <span asp-validation-for="CountyOfBirth" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="PostCode" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="PostCode" class="form-control" />
+            <span asp-validation-for="PostCode" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
         <label asp-for="Nationality" class="col-md-2 control-label"></label>
         <div class="col-md-10">
             <input asp-for="Nationality" class="form-control" />
@@ -127,6 +184,13 @@
         <div class="col-md-10">
             <input asp-for="PhoneNumber" class="form-control" />
             <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="TeamName" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="TeamName" class="form-control" />
+            <span asp-validation-for="TeamName" class="text-danger"></span>
         </div>
     </div>
     <label>Would you be willing to participate in the following:</label>
